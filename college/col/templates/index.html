@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Index - College</title>
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header sticky-top">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+    <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+      <h1 class="sitename">College</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="{% url 'index' %}" class="active">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'students_life' %}">Students Life</a></li>
+        <li><a href="{% url 'news' %}">News</a></li>
+        <li><a href="{% url 'events' %}">Events</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+  </div>
+</header>
+
+<main class="main">
+
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <h1>Inspiring Excellence Through Education</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="col-lg-6">
+        <img src="{% static 'assets/img/education/showcase-6.webp' %}" class="img-fluid" alt="Education">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="col-lg-6">
+        <img src="{% static 'assets/img/education/campus-5.webp' %}" class="img-fluid rounded" alt="Campus">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Featured Programs -->
+<section class="section">
+  <div class="container">
+    <img src="{% static 'assets/img/education/campus-3.webp' %}" class="img-fluid" alt="">
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section">
+  <div class="container">
+    <img src="{% static 'assets/img/person/person-f-12.webp' %}" class="img-fluid" alt="">
+    <img src="{% static 'assets/img/person/person-m-8.webp' %}" class="img-fluid" alt="">
+  </div>
+</section>
+
+<!-- News -->
+<section class="section">
+  <div class="container">
+    <img src="{% static 'assets/img/blog/blog-post-1.webp' %}" class="img-fluid">
+    <img src="{% static 'assets/img/blog/blog-post-2.webp' %}" class="img-fluid">
+  </div>
+</section>
+
+</main>
+
+<!-- Vendor JS -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+<!-- Main JS -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>
