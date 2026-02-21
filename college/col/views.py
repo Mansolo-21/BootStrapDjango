@@ -40,3 +40,10 @@ def contact(request):
         return redirect('contact')
 
     return render(request, 'contact.html')
+
+def academics(request):
+    return render(request, 'academics.html')
+
+def admissions(request):
+    return render(request, 'admissions.html')
+
