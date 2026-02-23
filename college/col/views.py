@@ -10,7 +10,7 @@ def about(request):
     return render(request, 'col/about.html')
 
 def students_life(request):
-    return render(request, 'col/students_life.html')
+    return render(request, 'col/students-life.html')
 
 def news(request):
     return render(request, 'col/news.html')
