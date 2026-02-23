@@ -10,7 +10,7 @@
         <h1 class="mb-2 mb-lg-0">Contact</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="current">Contact</li>
           </ol>
         </nav>
@@ -72,7 +72,7 @@
             <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
               <h3>Get in Touch</h3>
               <p>If you have any questions concerning registration please feel free to contact us by putting your details in this form</p>
-
+             
               <form action="forms/contact.php" method="post" class="php-email-form">
                 {% csrf_token %}
                 <div class="row">
