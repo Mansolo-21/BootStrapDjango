@@ -10,7 +10,7 @@ def about(request):
     return render(request, 'col/about.html')
 
 def students_life(request):
-    return render(request, 'col/students_life.html')
+    return render(request, 'col/students-life.html')
 
 def news(request):
     return render(request, 'col/news.html')
@@ -22,6 +22,7 @@ def contact(request):
     if request.method == 'POST':
         name = request.POST.get('name')
         email = request.POST.get('email')
+        subject = request.POST.get('subject')
         message = request.POST.get('message')
 
         # Save to database

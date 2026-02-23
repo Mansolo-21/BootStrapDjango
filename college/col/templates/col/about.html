@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Home {%endblock%}
+{% block title %}About Us {%endblock%}
 {% block content%}
 <main class="main">
 
@@ -10,7 +10,7 @@
         <h1 class="mb-2 mb-lg-0">About</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{% url 'index' %}">Home</a></li>
             <li class="current">About</li>
           </ol>
         </nav>
@@ -67,7 +67,7 @@
 
           <div class="col-lg-6">
             <div class="about-image" data-aos="zoom-in" data-aos-delay="300">
-              <img src="{% static 'img/education/campus-5.webq' %}" alt="Campus" class="img-fluid rounded">
+              <img src="{% static 'img/education/campus-5.webp' %}" alt="Campus" class="img-fluid rounded">
 
               <div class="mission-vision" data-aos="fade-up" data-aos-delay="400">
                 <div class="mission">
@@ -146,8 +146,7 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
               <div class="intro-image">
-                <img src="{% static 'img/education/teacher-5.webq' %}" alt="School Leadership" class="img-fluid rounded-lg">
-                <div class="experience-badge">
+              <img src="{% static 'img/education/teacher-5.webp' %}" alt="School Leadership" class="img-fluid rounded-lg">                <div class="experience-badge">
                   <span class="years">35+</span>
                   <span class="text">Years of Educational Excellence</span>
                 </div>
@@ -196,7 +195,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="member-image">
-                      <img src="{% static 'img/person/person-m-4.webq' %}" alt="Principal" class="img-fluid">
+                      <img src="{% static 'img/person/person-m-4.webp' %}" alt="Principal" class="img-fluid">
                     </div>
                     <div class="member-info">
                       <h4>Dr. Robert Williams</h4>
@@ -222,7 +221,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="member-image">
-                      <img src="{% static 'img/person/person-f-6.webq' %}" alt="Vice Principal" class="img-fluid">
+                      <img src="{% static 'img/person/person-f-6.webp' %}" alt="Vice Principal" class="img-fluid">
                     </div>
                     <div class="member-info">
                       <h4>Dr. Jennifer Parker</h4>
@@ -248,7 +247,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="member-image">
-                      <img src="{% static 'img/person/person-m-9.webq' %}" alt="Academic Dean" class="img-fluid">
+                      <img src="{% static 'img/person/person-m-9.webp' %}" alt="Academic Dean" class="img-fluid">
                     </div>
                     <div class="member-info">
                       <h4>Prof. Michael Stevens</h4>
@@ -274,7 +273,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="member-image">
-                      <img src="{% static 'img/person/person-f-5.webq' %}"alt="Student Affairs" class="img-fluid">
+                      <img src="{% static 'img/person/person-f-5.webp' %}"alt="Student Affairs" class="img-fluid">
                     </div>
                     <div class="member-info">
                       <h4>Dr. Angela Martinez</h4>
@@ -300,7 +299,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="member-image">
-                      <img src="{% static 'img/person/person-f-7.webq' %}" alt="Admissions Director" class="img-fluid">
+                      <img src="{% static 'img/person/person-f-7.webp' %}" alt="Admissions Director" class="img-fluid">
                     </div>
                     <div class="member-info">
                       <h4>Sophia Rodriguez</h4>
@@ -326,7 +325,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="member-image">
-                      <img src="{% static 'img/person/person-m-8.webq' %}" alt="Technology Director" class="img-fluid">
+                      <img src="{% static 'img/person/person-m-8.webp' %}" alt="Technology Director" class="img-fluid">
                     </div>
                     <div class="member-info">
                       <h4>James Thompson</h4>
@@ -352,7 +351,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="member-image">
-                      <img src="{% static 'img/person/person-m-3.webq' %}" alt="Athletics Director" class="img-fluid">
+                      <img src="{% static 'img/person/person-m-3.webp' %}" alt="Athletics Director" class="img-fluid">
                     </div>
                     <div class="member-info">
                       <h4>Daniel Wilson</h4>
@@ -378,7 +377,7 @@
                 <div class="card-inner">
                   <div class="card-front">
                     <div class="member-image">
-                      <img src="{% static 'img/person/person-f-4.webq' %}" alt="Counseling Head" class="img-fluid">
+                      <img src="{% static 'img/person/person-f-4.webp' %}" alt="Counseling Head" class="img-fluid">
                     </div>
                     <div class="member-info">
                       <h4>Dr. Emily Chen</h4>

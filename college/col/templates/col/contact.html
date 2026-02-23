@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Home {%endblock%}
+{% block title %}Contact Us{%endblock%}
 {% block content%}
   <main class="main">
 
@@ -71,9 +71,10 @@
 
             <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
               <h3>Get in Touch</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing.</p>
-
+              <p>If you have any questions concerning registration please feel free to contact us by putting your details in this form</p>
+             
               <form action="forms/contact.php" method="post" class="php-email-form">
+                {% csrf_token %}
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
