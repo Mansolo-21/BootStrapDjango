@@ -29,6 +29,7 @@ def contact(request):
         Contact.objects.create(
             name=name,
             email=email,
+            subject=subject,
             message=message
         )
 
