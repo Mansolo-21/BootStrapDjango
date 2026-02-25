@@ -74,6 +74,11 @@ def student(request):
     return render(request, 'col/404.html')
 
 
+def virtual_tour(request):
+    return render(request, 'col/virtual-tour.html')
+
+
+
 
 
 
