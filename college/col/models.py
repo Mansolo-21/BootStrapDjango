@@ -12,9 +12,9 @@ class Contact(models.Model):
     
 class Student(models.Model):
     first_name=models.CharField(max_length=20)
-    age=models.IntegerField
+    age=models.IntegerField(default=18)
     course=models.CharField(max_length=30)
-    phone=models.IntegerField
-    
+    phone=models.IntegerField(default=0)
+
     def __str__(self):
         return f'Student name:{self.first_name} Course:{self.course}'

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Contact
-from . forms import StudentForm
+from .form import StudentForm
 
 
 def index(request):
@@ -43,7 +43,16 @@ def academics(request):
     return render(request, 'col/academics.html')
 
 def admissions(request):
-    return render(request, 'col/admissions.html')
+    if request.method == 'POST':
+        form = StudentForm(request.POST)
+        if form.is_valid():
+            # process data here (email, etc.)
+            messages.success(request, "Application submitted!")
+            return redirect('admissions')
+    else:
+        form = StudentForm()
+
+    return render(request, 'col/admissions.html', {'form': form})
 
 def faculty(request):
     return render(request, 'col/faculty-staff.html')
@@ -69,9 +78,6 @@ def newsd(request):
 def error(request):
     return render(request, 'col/404.html')
 
-def student(request):
-    form = StudentForm()
-    return render(request, 'col/404.html')
 
 
 def virtual_tour(request):
