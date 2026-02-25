@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Contact
+from . forms import StudentForm
 
 
 def index(request):
@@ -66,6 +67,10 @@ def newsd(request):
     return render(request, 'col/news-details.html')
 
 def error(request):
+    return render(request, 'col/404.html')
+
+def student(request):
+    form = StudentForm()
     return render(request, 'col/404.html')
 
 
