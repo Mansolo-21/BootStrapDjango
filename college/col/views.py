@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Contact
 from .form import StudentForm
+from .models import Student
 
 
 def index(request):
@@ -51,6 +52,15 @@ def admissions(request):
             return redirect('admissions')
     else:
         form = StudentForm()
+    # Save to database
+        Student.objects.create(
+            name= name,
+            email= email,
+            message= message
+        )
+
+        messages.success(request, "Your message has been sent successfully!")
+        return redirect('contact')
 
     return render(request, 'col/admissions.html', {'form': form})
 
